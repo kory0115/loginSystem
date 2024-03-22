@@ -41,6 +41,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/idTextView"
         android:layout_marginHorizontal="25dp"
+        android:inputType="text"
         android:layout_marginTop="16dp"
         android:hint="@string/input_id"
         android:maxLines="1"/>

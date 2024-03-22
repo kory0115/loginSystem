@@ -37,9 +37,12 @@ class HomeActivity : AppCompatActivity() {
         nameTextView.text = "이름:$name"
         ageTextView.text = "나이:${random.nextInt(50) + 1}"
         mbtiTextView.text = "mbti:${mbti}"
-
-
-
+        runOnUiThread {
+            middleLayout.animate()
+                .alpha(1.0f)
+                .setDuration(1000)
+                .start()
+        }
         closeButton.setOnClickListener {
             finish()
         }
