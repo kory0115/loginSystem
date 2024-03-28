@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
             id = result.data?.getStringExtra(MY_LOGIN_ID)
             password = result.data?.getStringExtra(MY_LOGIN_PASSWORD)
             name = result.data?.getStringExtra(MY_LOGIN_NAME)
-            binding.idEditTextView.hint = id
+            binding.idEditTextView.setText(id)
         } else {
             Toast.makeText(this, "수신 실패", Toast.LENGTH_SHORT).show()
         }
